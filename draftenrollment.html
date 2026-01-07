@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Helvetica", "Arial", sans-serif;
+            background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/dd77fda9-d2bd-47aa-9576-830b020639f2/JAR_4005a+%281%29.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Reduced padding since navbar is gone */
+            padding-top: 40px; 
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        #form-box {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 650px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        /* Unified Button Styling */
+        .btn-enroll {
+            background-color: #1a0e87; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 5px;
+        }
+
+        .btn-enroll:hover {
+            background-color: #1510a0;
+            color: white;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        hr {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="form-box">
+    <h1 class="text-center">Enrollment</h1>
+    <p class="text-center lead">Fill out the form to enroll for the upcoming year!</p>
+    <hr>
+
+    <form>
+        <h4 class="mt-2">Student Information</h4>
+        <div class="mb-3">
+            <label for="name1">Full Name:</label>
+            <input type="text" class="form-control" id="name1" placeholder="John Doe">
+        </div>
+
+        <div class="mb-3">
+            <label for="gender">Gender:</label>
+            <select class="form-select" id="gender">
+                <option selected disabled>Select Gender</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>None</option>
+            </select>
+        </div>
+
+        <h4 class="mt-4">Contact Details</h4>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="num">Phone Number:</label>
+                <input type="number" class="form-control" id="num" placeholder="09123456789">
+            </div>
+        </div>
+
+        <h4 class="mt-4">Academic Details</h4>
+        <div class="mb-3">
+            <label>Mode of Learning:</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option1">
+                <label class="form-check-label" for="option1">Online</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option2">
+                <label class="form-check-label" for="option2">Face to Face</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="section">Grade Level:</label>
+            <select id="section" class="form-select">
+                <option value="none">Select Grade</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn-enroll">Submit Form</button>
+            <button type="reset" class="btn-enroll">Clear All</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
