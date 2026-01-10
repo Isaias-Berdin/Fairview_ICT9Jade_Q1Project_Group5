@@ -19,6 +19,7 @@
             backdrop-filter: blur(3px);
             min-height: 100vh;
             padding-bottom: 40px;
+            padding-top: 120px
         }
 
         .overlay-box {
@@ -63,6 +64,8 @@
         .student-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+            position: relative;
+            z-index: 1;
         }
 
         .student-card img {
@@ -119,6 +122,7 @@ transition: text-decoration 0.5s;
 position: sticky;
 top: 0;
 box-shadow: 0 2px 15px rgba(0, 0, 0, 1.0);
+z-index: 1050;
 }
 
     </style>
