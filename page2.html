@@ -84,13 +84,14 @@ margin: auto;
 
         .student-card::before {
             content: "";
-            position: absolute;
+            position: fixed;
             left: 0;
             top: 20px;
             height: calc(100% - 40px);
             width: 4px;
             background-color: #f4b400;
             border-radius: 4px;
+            
         }
 
         .student-card:hover {
@@ -106,6 +107,7 @@ margin: auto;
             transition: transform 0.4s ease;
             display: block;
             margin: 0 auto;
+            max-width: 100%;
         }
 
         .student-card:hover img {
